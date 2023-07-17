@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: .3s ease;
+}
+
+/* Colors */
+:root{
+    --PrimaryColor:hsl(263, 93%, 50%);
+    --HoverColor: hsl(263, 90%, 42%);
+    --WhiteColor: #FFF;
+    --BlackColor: hsl(0, 0%, 18%);
+    --TextColor: hsl(240, 1%, 48%);
+    --WhiteColorSecundary: hsl(0, 0%, 93%);
+    --GreyBg: hsl(0, 0%, 96%);
+    --GreyText: hsl(0, 0%, 82%);
+    --InputColor: hsl(330, 12%, 97%);
+}
+
+/* Global */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.section{
+    padding: 4rem 2rem 0;
+}
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+    padding: .4rem 1.5rem;
+    background: var(--PrimaryColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.btn a{
+    color: var(--WhiteColor);
+    font-weight: 500;
+}
+
+.btn:hover a{
+    color: var(--WhiteColor); 
+}
+
+.secIntro {
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto 2rem;
+}
+
+.secIntro .secTitle{
+    line-height: 1.5rem;
+    color: var(--BlackColor);
+    padding-bottom: .5rem;
+}
+
+.secIntro p {
+    color: var(--TextColor);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+img, video {
+    width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: 100%;
+}
+
+.showMessage {
+    display: block;
+    padding: 10px;
+    background: var(--PrimaryColor);
+    color: var(--WhiteColor);
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 556px){
+    .mainContent{
+       grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 884px){
+    .mainContent{
+       grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1240px){
+    .container{
+       width: 75% !important;
+       margin: auto !important;
+    }
+}

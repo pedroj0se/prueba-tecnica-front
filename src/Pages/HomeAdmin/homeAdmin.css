@@ -1,0 +1,19 @@
+.Admin{
+    flex: 6;
+}
+
+.homeWidgets{
+    display: flex;
+    margin: 20px;
+}
+
+.containerAdmin{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+.link{
+    text-decoration: none;
+    color: inherit;
+}
